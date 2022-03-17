@@ -1,18 +1,22 @@
-export const Navbar = ()=>{
-    return (
+import { Link } from "react-router-dom";
+
+const links = [
+  // Fix this links array, it's an array of objects {to: "", title: ""}
+  { to : "/", title : "Home"}, { to :"/products",title : "All Products"}, { to :"/about" , title : "About"},{ to :"/contactus" , title : "Contact US"}
+];
+
+export const Navbar = () => {
+  return (
     <>
-        <div style={{
-            display : "flex",
-            gap : "40px",
-            margin : "auto",
-            width : "30%",
-            textAlign : "center"
-        }}>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/users">Users</a>
-            <a href="/user">userDetail</a>
-        </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {links.map((el) => {
+          return (
+            <Link key={el.to} style={{ padding: "10px" }} to={el.to}>
+              {el.title}
+            </Link>
+          );
+        })}
+      </div>
     </>
-    )
-}
+  );
+};
