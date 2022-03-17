@@ -1,20 +1,14 @@
+import logo from './logo.svg'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import { About } from './Components/About'
-import { Navbar } from './Components/Navbar'
-import { Users } from './Components/Users'
-import { User } from './Components/User'
+
+import { AllRoutes } from "./Components/Routes"
+
 function App() {
   return (
     <div className="App">
-    <Navbar/>
-    <Routes>
-      <Route path="/about" element={<About/>} />
-      <Route path='/users' element={<Users/>}/>
-      <Route path='/user/:id' element={<User/>}/>
-    </Routes>
+      <AllRoutes />
     </div>
-  )
+  );
 }
 
 export default App
