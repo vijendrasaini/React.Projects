@@ -76,11 +76,12 @@ export function Table() {
                     {list.map((el, index) => <tr key={el.id}>
                         <td style={{
                             border: "1px solid black",
-                        }}>{el.id}</td>
+                        }}>{index+1}</td>
                         <td style={{
                             border: "1px solid black",
                         }}>
-                        <input value={el.task} style={{ border : 'none'}} onChange={(e)=>setEditValue(e.target.value)} type="text" placeholder="Edit your task" />
+                        {/* <input value={el.task} style={{ border : 'none'}} onChange={(e)=>setEditValue(e.target.value)} type="text" placeholder="Edit your task" /> */}
+                        { el.task}
                         </td>
                         <td style={{
                             border: "1px solid black",
