@@ -8,7 +8,7 @@ export const reducer = (state, { type , payload}) =>{
         case SUB_COUNT:
             return { ...state, count : state.count - payload}
         case ADD_TODO:
-            return { ...state, todo : [ ...state.todo, {task : payload, status : false, id : Date.now()}]}
+            return { ...state, todo : payload}
         case DELETE_TODO:
             let new_todo = []
             for (let i = 0; i < state.todo.length; i++) {

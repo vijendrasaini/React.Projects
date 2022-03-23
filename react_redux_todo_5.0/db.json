@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "task": "vijendra",
+      "status": false,
+      "id": 1
+    },
+    {
+      "task": "xyz",
+      "status": true,
+      "id": 2
+    },
+    {
+      "task": "rajmoli",
+      "status": true,
+      "id": 3
+    }
+  ]
+}

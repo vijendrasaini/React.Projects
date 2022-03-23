@@ -1,3 +1,14 @@
 {
-  "todos" : []
+  "todos": [
+    {
+      "task": "vijednra",
+      "status": false,
+      "id": 1
+    },
+    {
+      "task": "too crazy",
+      "status": false,
+      "id": 2
+    }
+  ]
 }
