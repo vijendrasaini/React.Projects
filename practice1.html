@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            margin: auto;
+            /* margin-top: ; */
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // console.log(getData())
+async function getData(){
+
+    try {
+        const a = await fetch(`http://localhost:7000/todos`)
+        const b = await a.json()
+        console.log({ b})
+        return b
+    } catch (error) {
+        console.log({ message_Error : error.message})
+    }
+}
+const a = getData().then(res=> res)
+console.log(a)
+</script>
