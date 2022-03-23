@@ -18,7 +18,6 @@ export const Todo = ()=>{
     }
     const dispatch = useDispatch()
     return (
-
         <>
             <h2>TODO : SINGAL</h2>
             { todo== undefined ? <Navigate to={'/'}/> : <table style={{ width : "500px", margin : "auto"}}>
