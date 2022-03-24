@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "task": "mohandlad",
+      "status": true,
+      "id": 6
+    },
+    {
+      "task": "Your name",
+      "status": false,
+      "id": 9
+    },
+    {
+      "task": "Miss india",
+      "status": false,
+      "id": 10
+    }
+  ]
+}
