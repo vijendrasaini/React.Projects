@@ -1,0 +1,38 @@
+{
+  "countries": [
+    {
+      "country": "india",
+      "id": 1
+    },
+    {
+      "country": "USA",
+      "id": 2
+    },
+    {
+      "country": "CHINA",
+      "id": 3
+    },
+    {
+      "country": "UK",
+      "id": 4
+    },
+    {
+      "country": "BRANJIL",
+      "id": 5
+    }
+  ],
+  "cities": [
+    {
+      "city": "Jhujhunu",
+      "country": "India",
+      "population": "9834797",
+      "id": 1
+    },
+    {
+      "city": "Jhujhunu",
+      "country": "USA",
+      "population": "23452456",
+      "id": 2
+    }
+  ]
+}
